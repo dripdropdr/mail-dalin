@@ -1,0 +1,85 @@
+{% load static %}
+<!-- <link rel="stylesheet" href={% static "style.css" %}> -->
+<section class="template-area">
+    <p class="template-title">업무 보고</p>
+    <hr>
+    <br>
+    <br>
+    <div class="style-bar">
+            <button class="btn-bold"><b>B</b></button>
+            <button class="btn-bar"><u>B</u></button>
+            <button class="btn-cross"><del>B</del></button>
+            <button class="btn-itlc"><i>B</i></button>
+            <button class="btn-color"><b style="color:#1A4FFF;">B</b></button>
+            <button class="btn-back"><b style="color:white; background-color:#1A4FFF;">&nbsp;B&nbsp;</b></button>
+
+    </div>
+    <div>
+        <form class="template-form">
+        <div><label class='form-title' name='label'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;제목</label><input type = 'text' placeholder = "친환경 창문 프레임 설계 및 하중 분석 결과" id='form-0' class="content" name='form' onkeyup='printContent(0)'></div>
+
+        <div><label class='form-greeting' name='label'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;인사말</label><input type = 'text' placeholder = "안녕하세요. 제품 설계팀 한민현팀장입니다." id='form-1' class="content" name='form' onkeyup='printContent(1)'></div>
+        
+        <div><label class='form-purpose' name='label'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;목적</label><input type = 'text' placeholder = "지시하신 제품 설계 결과 및 하중 분석 보고합니다." id='form-2' class="content" name='form' onkeyup='printContent(2)'></div>
+        
+        <div><label class='form-instruction' name='label'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;지시사항</label><textarea type = 'textarea' id='form-3' class="content" name='form' onkeyup='printContent(3)'></textarea></div>
+        
+        <div><label class='form-result' name='label'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;결과</label><textarea type = 'text' id='form-4' class="content" name='form' onkeyup='printContent(4)'></textarea></div>
+        
+        <div><label class='form-significant' name='label'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;특이사항</label><textarea type = 'text' id='form-5' class="content" name='form' onkeyup='printContent(5)'></textarea></div>
+        
+        <div><label class='form-request' name='label'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;당부사항</label><input type = 'text' placeholder = "첨부된 보고서에 피드백이 있으시면 7/27(화) 까지 회신 부탁드립니다." id='form-6' class="content" name='form' onkeyup='printContent(6)'></div>
+        
+        <div><label class='form-ending' name='label'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6">
+            <circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
+            &nbsp;맺음말</label><input type = 'text' placeholder = "감사합니다." id='form-7' class="content" name='form' onkeyup='printContent(7)'></div>
+        
+        <!-- <div><label class='memo' name='label'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6">
+            <circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/>
+          </svg>&nbsp;메모</label><textarea type = 'textarea' placeholder = "ex) 유료 음원 사용시 라이선스 체크 부탁드립니다." id='memo' name='form'></textarea></div> -->
+        <br>
+        <hr>
+        <br>
+        <div class="template-auto">
+            <p>&nbsp;[<span class="teamnm">업무보고</span>]&nbsp;&nbsp;<span class="preview">&nbsp;</span></p>
+            <hr>
+            <div class="template-preview">
+                <p class="vac"></p>
+                <div>
+                <!-- <p class="preview">&nbsp;</p> -->
+                <p class="preview">&nbsp;</p>
+                <p class="preview">&nbsp;</p>
+                <p class="preview">&nbsp;</p>
+                <p class="preview">&nbsp;</p>
+                <p class="preview">&nbsp;</p>
+                <p class="preview">&nbsp;</p>
+                <p class="preview">&nbsp;</p>
+                </div>
+                
+            </div>
+        </div>
+        <br><br>
+        <div><p>내용 작성이 완료되었나요? 상단의 미리보기를 확인해보세요😉<br>작성완료 버튼을 클릭하시면 내용이 <b><u>자동 복사</u></b> 됩니다.</p></div>
+        <br>
+        <div class='output-wrap'><input class='finish' type="button" value="작성 완료" onclick="getValueInput()"/></div>
+    </form>
+    <span id="textDiv"></span>
+</div>
+<br>
+<br>
+<br>
+</section>

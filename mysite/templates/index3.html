@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mail:Dalin</title>
+  <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+  <link rel="stylesheet" href={% static "style.css" %}>
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+ </head>
+<body>
+    {% include "header.html" %}
+    <section class="home-section">
+      <p style="line-height: 107%;"><br><br></p>
+        <!-- <div class="home-content">
+          <p class='menu-blank'>
+            <i class='bx bx-menu'></i>
+          </p>
+          <span class="text">Drop Down Sidebar</span>
+        </div> -->
+        {% include "tutorials.html" %}
+      </section>
+    {% include "footer.html" %}
+    <div><button class="btn-top">Top</button></div>
+    <script src={% static "script.js" %}></script>
+    <script src={% static "jquery.js" %}></script>
+</body>
+
+</html>

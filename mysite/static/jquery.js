@@ -5,14 +5,14 @@
 //     return false;
 // });
 
-$(document).on("click", 'ul.tabs li', function(){
-	var tab_id = $(this).attr('data-tab');
+// $(document).on("click", 'ul.tabs li', function(){
+// 	var tab_id = $(this).attr('data-tab');
 
-	$('ul.tabs li').removeClass('current');
-	$('.tab-content').removeClass('current');
-	$('.preview').removeClass('current');
+// 	$('ul.tabs li').removeClass('current');
+// 	$('.tab-content').removeClass('current');
+// 	$('.preview').removeClass('current');
 
-	$(this).addClass('current');
-	$("#"+tab_id).addClass('current');
-	$('.preview').addClass('current');
-})
+// 	$(this).addClass('current');
+// 	$("#"+tab_id).addClass('current');
+// 	$('.preview').addClass('current');
+// })

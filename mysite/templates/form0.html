@@ -1,73 +1,68 @@
 {% load static %}
 <!-- <link rel="stylesheet" href={% static "style.css" %}> -->
 <section class="template-area">
-    <p class="template-title">업무 보고</p>
+    <svg xmlns="http://www.w3.org/2000/svg" width="165" height="40" viewBox="0 0 165 40">
+        <rect id="사각형_24" data-name="사각형 24" width="165" height="40" rx="10" fill="#f2f2f2"/>
+        <text id="업무_보고" data-name="업무 보고" transform="translate(98 31.5)" fill="#1a4fff" font-size="28" font-family="MalgunGothicBold, Malgun Gothic"><tspan x="-59.92" y="0" font-family="Quicksand-Bold, Quicksand" font-weight="700">업무</tspan><tspan y="0" font-family="Quicksand-Bold, Quicksand" font-weight="700"> </tspan><tspan y="0" font-family="Quicksand-Bold, Quicksand" font-weight="700">보고</tspan></text>
+        <path id="합치기_3" data-name="합치기 3" d="M6.154,21.5a.5.5,0,0,1-.5-.5V11.148H0L10.5,0,21,11.148H15.347V21a.5.5,0,0,1-.5.5Z" transform="translate(10 8.75)" fill="#1a4fff" stroke="#1a4fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </svg>
     <hr>
     <br>
-    <br>
-    <div class="style-bar">
-            <button class="btn-bold"><b>B</b></button>
-            <button class="btn-bar"><u>B</u></button>
-            <button class="btn-cross"><del>B</del></button>
-            <button class="btn-itlc"><i>B</i></button>
-            <button class="btn-color"><b style="color:#1A4FFF;">B</b></button>
-            <button class="btn-back"><b style="color:white; background-color:#1A4FFF;">&nbsp;B&nbsp;</b></button>
-
-    </div>
     <div>
         <form class="template-form">
-        <div><label class='form-title' name='label'>
+        <div class='f'><label class='form-title' name='label'>
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
             &nbsp;제목</label><input type = 'text' placeholder = "친환경 창문 프레임 설계 및 하중 분석 결과" id='form-0' class="content" name='form' onkeyup='printContent(0)'></div>
 
-        <div><label class='form-greeting' name='label'>
+        <div class='f'><label class='form-greeting' name='label'>
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
             &nbsp;인사말</label><input type = 'text' placeholder = "안녕하세요. 제품 설계팀 한민현팀장입니다." id='form-1' class="content" name='form' onkeyup='printContent(1)'></div>
         
-        <div><label class='form-purpose' name='label'>
+        <div class='f'><label class='form-purpose' name='label'>
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
             &nbsp;목적</label><input type = 'text' placeholder = "지시하신 제품 설계 결과 및 하중 분석 보고합니다." id='form-2' class="content" name='form' onkeyup='printContent(2)'></div>
         
-        <div><label class='form-instruction' name='label'>
+        <div class='f'><label class='form-instruction' name='label'>
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
-            &nbsp;지시사항</label><textarea type = 'textarea' id='form-3' class="content" name='form' onkeyup='printContent(3)'></textarea></div>
+            &nbsp;지시사항</label><textarea type = 'textarea' placeholder='지시사항 목록' id='form-3' class="content" name='form' onkeyup='printContent(3)'></textarea></div>
         
-        <div><label class='form-result' name='label'>
+        <div class='f'><label class='form-result' name='label'>
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
-            &nbsp;결과</label><textarea type = 'text' id='form-4' class="content" name='form' onkeyup='printContent(4)'></textarea></div>
+            &nbsp;결과</label><textarea type = 'text' placeholder='결과 목록' id='form-4' class="content" name='form' onkeyup='printContent(4)'></textarea></div>
         
-        <div><label class='form-significant' name='label'>
+        <div class='f'><label class='form-significant' name='label'>
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
             &nbsp;특이사항</label><textarea type = 'text' id='form-5' class="content" name='form' onkeyup='printContent(5)'></textarea></div>
         
-        <div><label class='form-request' name='label'>
+        <div class='f'><label class='form-request' name='label'>
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"><circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
             &nbsp;당부사항</label><input type = 'text' placeholder = "첨부된 보고서에 피드백이 있으시면 7/27(화) 까지 회신 부탁드립니다." id='form-6' class="content" name='form' onkeyup='printContent(6)'></div>
         
-        <div><label class='form-ending' name='label'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6">
+        <div class='f'><label class='form-ending' name='label'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6">
             <circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/></svg>
             &nbsp;맺음말</label><input type = 'text' placeholder = "감사합니다." id='form-7' class="content" name='form' onkeyup='printContent(7)'></div>
-        
-        <!-- <div><label class='memo' name='label'><svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6">
-            <circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" fill="#707070"/>
-          </svg>&nbsp;메모</label><textarea type = 'textarea' placeholder = "ex) 유료 음원 사용시 라이선스 체크 부탁드립니다." id='memo' name='form'></textarea></div> -->
         <br>
         <hr>
         <br>
         <div class="template-auto">
-            <p>&nbsp;[<span class="teamnm">업무보고</span>]&nbsp;&nbsp;<span class="preview">&nbsp;</span></p>
+            <p>&nbsp;[<span class="teamnm">업무보고</span>]&nbsp;&nbsp;<span class="preview">친환경 창문 프레임 설계 및 하중 분석 결과</span></p>
             <hr>
             <div class="template-preview">
                 <p class="vac"></p>
                 <div>
                 <!-- <p class="preview">&nbsp;</p> -->
-                <p class="preview">&nbsp;</p>
-                <p class="preview">&nbsp;</p>
-                <p class="preview">&nbsp;</p>
-                <p class="preview">&nbsp;</p>
-                <p class="preview">&nbsp;</p>
-                <p class="preview">&nbsp;</p>
-                <p class="preview">&nbsp;</p>
+                <p class="preview" style="margin-top: 20px;">안녕하세요. 제품 설계팀 한민현팀장입니다.</p><br>
+                <p class="preview">지시하신 제품 설계 결과 및 하중 분석 보고합니다.</p><br>
+                <p style="color:#707070">지시사항은 다음과 같습니다.</p><br>
+                <p class="preview">1. 제품 3D 설계
+2. 제품 무게 측정
+3. 하중에 따른 부품 파손 계산</p><br>
+                <p style="color:#707070">결과는 다음과 같습니다.</p><br>
+                <p class="preview">1. 3D 도면 파일 첨부
+2. 무게 : 5.4kg
+3. 23Nm에서 파손 발생(그래프 파일 첨부)</p><br>
+                <p class="preview">첨부된 보고서에 피드백이 있으시면 7/27(화) 까지 회신 부탁드립니다.</p><br>
+                <p class="preview" style="margin-bottom: 20px;">감사합니다</p>
                 </div>
                 
             </div>

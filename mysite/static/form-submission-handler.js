@@ -72,7 +72,8 @@
             form.reset();
             var formElements = form.querySelector(".form-elements")
             if (formElements) {
-              formElements.style.display = "none"; // hide form
+              // formElements.style.display = "none"; // hide form
+              alert("답변 감사합니다!")
             }
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {

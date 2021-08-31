@@ -1,11 +1,20 @@
 // -------------navbar-----------
-let arrow = document.querySelectorAll(".arrow");
-for (var i = 0; i < arrow.length; i++) {
-  arrow[i].addEventListener("click", (e)=>{
- let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
- arrowParent.classList.toggle("showMenu");
-  });
-}
+// let arrow = document.querySelectorAll("#arrow");
+// for (var i = 0; i < arrow.length; i++) {
+//   arrow[i].addEventListener("click", (e)=>{
+//  let arrowParent = e.target.parentElement; //selecting main parent of arrow
+//  arrowParent.classList.toggle("showMenu");
+//   });
+// }
+
+// let arrow2 = document.querySelectorAll(".arrow");
+// for (var i = 0; i < arrow.length; i++) {
+//   arrow[i].addEventListener("click", (e)=>{
+//  let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+//  console.log(arrowParent)
+//  arrowParent.classList.toggle("showMenu");
+//   });
+// }
 
 // ------------top btn------------
 let Top = document.querySelector('.btn-top');
@@ -21,9 +30,10 @@ Top.addEventListener('click', function(e){
 
 // ----------------preview-----------
 function printContent(num){
-  if (num == "team"){
+  if (num == 100){
     const teamnm = document.getElementById('form-00').value;
-    document.getElementsByClassName("teamnm").innerText = teamnm;
+    console.log(teamnm);
+    document.getElementsByClassName("teamnm")[0].innerText = teamnm;
   }
   if (num == 0){
     const cont0 = document.getElementById('form-0').value;
@@ -67,31 +77,7 @@ function getValueInput(){
    textCopy += "["+document.getElementsByClassName("teamnm")[0].innerHTML+"] "
   
   for (var i = 0; i < array_inputValue.length; i++) {
-      textCopy += (array_inputValue[i].innerHTML+"\n")
-      console.log(array_inputValue[i].innerHTML)
-  }
-
-  var text = textCopy;
-  var createInput = document.createElement("textarea");
-  document.getElementById("textDiv").appendChild(createInput);
-              // 만든 input 태그의 value 값에 복사할 텍스트 값을 넣어줍니다.
-  createInput.value = text;
-              // 복사 기능을 수행한 후
-  createInput.select();
-  document.execCommand('copy');
-              // 가상으로 붙여주었던 input 태그를 제거해줍니다.
-  document.getElementById("textDiv").removeChild(createInput);
-  alert('복사가 완료되었습니다.');
-
-}
-
-function getValueInputCurrent(){
-  var array_inputValue = document.getElementsByClassName('preview current');
-  console.log(array_inputValue)
-  var textCopy = "";
-  
-  for (var i = 0; i < array_inputValue.length; i++) {
-      textCopy += (array_inputValue[i].innerHTML+"\n")
+      textCopy += (array_inputValue[i].innerHTML+"\n\n")
       console.log(array_inputValue[i].innerHTML)
   }
 

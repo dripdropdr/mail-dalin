@@ -1,9 +1,16 @@
+{% load static %}
 <section class="template-area">
-    <p class="template-title">Feedback</p>
+    <!-- <p class="template-title">Feedback</p> -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="169.6" height="39.2" viewBox="0 0 169.6 39.2">
+        <rect id="사각형_24" data-name="사각형 24" width="169.6" height="39.2" rx="10" fill="#f2f2f2"/>
+        <text id="Feedback" transform="translate(23 37)" fill="#1a4fff" stroke="#1a4fff" stroke-width="1" font-size="28" font-family="Quicksand-Bold, Quicksand" font-weight="700"><tspan x="-2" y="-7">Feedback</tspan></text>
+      </svg>
+      
+      
     <hr>
     <br>
     <div class="feedback-area">
-        <p align="center">‘메일달인’을 사용해보니 어떠신가요? :D<br>‘메일달인’은 여러분의 피드백을 통해 더욱 성장할 것입니다.</p>
+        <p align="center">‘메일달인’을 사용해보니 어떠신가요? :D<br>‘메일달인’은 <b>여러분의 피드백</b>을 통해 더욱 성장할 것입니다.</p>
         </div>
 
         <div class="tutorial-btm-vac"></div>
@@ -24,7 +31,7 @@
             <div class='review-result'><button class='button-success pure-button button-xlarge'>보내기</button></div>
         </div>
     </form>
-    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="{% static 'form-submission-handler.js' %}"></script>
     </div>
     
 </section>

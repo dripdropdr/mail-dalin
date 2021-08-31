@@ -3,7 +3,7 @@
 <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
   <div class="sidebar">
     <div class="logo-details">
-      <a href="{% url 'index' %}">
+      <a href="{% url 'tutorials' %}">
       <svg class='logo-svg' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="194.732" height="32.645" viewBox="0 0 194.732 32.645">
         <defs>
           <clipPath id="clip-path">
@@ -56,18 +56,20 @@
           <li><a class="link_name" href="#">How to use</a></li>
         </ul>
       </li>
-      <li>
+
+
+      <li class="showMenu">
         <div class="iocn-link">
-          <a href="#">
+          <a href="{% url 'report' %}">
             <!-- <i class='bx bx-collection' ></i> -->
             <span class="link_name">Forms</span>
           </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
+          <!-- <i class='bx bxs-chevron-down arrow' ></i> -->
+          
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Forms</a></li>
-          <li>
-          <a href="{% url 'index' %}"><svg style="margin: 0 5px 0 0;" xmlns="http://www.w3.org/2000/svg" width="18" height="18.5" viewBox="0 0 18 18.5">
+          <hr>
+          <a href="{% url 'report' %}"><svg style="margin: 0 5px 0 0;" xmlns="http://www.w3.org/2000/svg" width="18" height="18.5" viewBox="0 0 18 18.5">
             <path id="합치기_1" data-name="합치기 1" d="M5.077,17.5a.5.5,0,0,1-.5-.5V9.074H0L8.5,0,17,9.074H12.424V17a.5.5,0,0,1-.5.5Z" transform="translate(0.5 0.5)" fill="#707070" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           </svg>
           &nbsp;업무 보고</a></li>
@@ -92,6 +94,7 @@
 
         </ul>
       </li>
+
 
       <li>
         <a href="{% url 'feedback' %}">

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .sidebar{
   position: fixed;
@@ -26,15 +26,14 @@
   align-items: center;
 }
 .sidebar hr{
-  border: 0;
+  border: solid 1px #BEBEBE;
   width: 190px;
-  height: 2px;
   margin: 15px 0px 0px 40px;
-  background-color: #707070;
   border-radius: 1px;
 }
 .sub-menu hr{
   margin: 0 -40px 0 0;
+  width: 150px;
 }
 .sidebar .logo-details svg{
   width: 150px;
@@ -93,6 +92,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 10px 0px 5px 0px;
 }
 /* .sidebar.close .nav-links li .iocn-link{
   display: block
@@ -285,11 +285,11 @@
   font-size: 26px;
   font-weight: 600;
 }
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
   }
-}
+} */
 .menu-blank{
     width:inherit;
 }
@@ -304,6 +304,7 @@
   height: 50px;
   border-radius: 50%;
   color: #1A4FFF;
+  border: none;
   background-color: #fafafa;
   transition-duration: 0.3s;
 }
@@ -314,30 +315,19 @@
 
 /* -----------------tab------------------ */
 ul.tabs{
-	margin: 0px;
-	padding: 0px;
+	margin-left: 68px;
+  margin-bottom: 0px;
+  padding: 0px;
 	list-style: none;
 }
-ul.tabs li{
-	background: none;
-	color: #222;
-	display: inline-block;
-	padding: 10px 15px;
+ul.tabs a{
+	text-decoration: none;
 	cursor: pointer;
 }
-
-ul.tabs li.current{
-	color: #1A4FFF;
+ul.tabs a:first-child{
+  margin-right:15px ;
 }
 
-.tab-content{
-	display: none;
-	padding: 15px;
-}
-
-.tab-content.current{
-	display: inherit;
-}
 
 
 /* ---------------style bar------------------ */
@@ -368,12 +358,18 @@ ul.tabs li.current{
 .template-area > hr{
   width: 85%;
   height: 0.5px;
-  color: #9b9b9b ;
+  border: solid 1px #BEBEBE;
 }
 .template-form > hr{
   width: 85%;
   height: 0.5px;
-  color: #9b9b9b ;
+  border: solid 1px #BEBEBE;
+}
+.template-area:first-child, .template-form > .f{
+  margin-left: 30px;
+}
+.template-title{
+  margin-bottom: 10px;
 }
 .template-auto{
   background-color: #fafafa;
@@ -396,21 +392,27 @@ ul.tabs li.current{
 .preview-hr{
   margin-left: 25px;
   width:82%;
-  color: #9b9b9b ;
+  border: solid 1px #BEBEBE;
 }
-.template-preview > div, .vac{
+.template-preview > div, .vac, .vac-btm{
   display: inline-block;
 }
 .preview{
-  white-space: pre;
+  white-space: pre-line;
   color: #707070;
-  font-family: 'Poppins';
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
 }
 .vac{
   width: 120px;
   height: 200px;
-
+}
+.template-preview{
+  background-color: #fafafa;
+  width: auto;
+  height: auto;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .template-title{
   color: #1A4FFF;
@@ -418,7 +420,7 @@ ul.tabs li.current{
   font-weight: bold;
 }
 .template-form > div:not(.template-auto){
-  margin: 15px 0 0 0;
+  margin-top:15px;
 }
 .template-form > div:not(.template-auto) > p, .output-wrap{
   position: relative;
@@ -438,9 +440,13 @@ ul.tabs li.current{
 .template-form > div > input:not(.output-wrap > input), textarea{
     position:relative;
     width: 72%;
-    border:0 solid black;
-    background-color: #fafafa;
+    border: solid 1px #707070;
+    /* background-color: #fafafa; */
     border-radius: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.template-form > div > input:not(.output-wrap > input)::placeholder, textarea::placeholder{
+  color: #707070;
 }
 .template-form > div > input{
   height: 50px;
@@ -459,6 +465,8 @@ ul.tabs li.current{
   margin-top: 5px;
   width: 125px;
 }
+
+
 
 /* ---------------stararea------------------ */
 .wrap{
@@ -521,6 +529,7 @@ ul.tabs li.current{
 .intro-area > div > div{
   display: inline-block;
   font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .intro-area > div> .right-vac{
@@ -543,9 +552,10 @@ ul.tabs li.current{
 }
 .intro-area > hr{
   width: 82%;
-  border: solid 1px #BEBEBE;
+  border: solid 1px #b7b7b7;
 }
 .tutorial-area{
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 75%;
   margin-right: 5%;
 }
@@ -556,13 +566,17 @@ ul.tabs li.current{
 .tutorial-area > p.hi{
   color: #1A4FFF;
   font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .tutorial-area > p.hi > span{
   background-color: #1A4FFF;
   color: white;
   font-size: 25px;
 }
-
+p.bye > span{
+  background-color: #1A4FFF;
+  color: white;
+}
 .tutorials{
   margin:75px 0px 75px 0px;
 }
@@ -595,6 +609,7 @@ ul.tabs li.current{
   width: 82%;
 }
 .feedback-area > p:first-child{
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #1A4FFF;
   font-size: 20px;
   margin: 50px 0px 50px 0px;
@@ -606,6 +621,13 @@ ul.tabs li.current{
   background-color: #E5EAFF;
   width: 80%;
   height: 200px;
+  padding: 10px;
+  border: none;
+  line-height: 150%;
+}
+.feedback-content::-webkit-input-placeholder{
+  text-align: center;
+  line-height: 150%;
 }
 .review-result{
   margin: 50px 0px 50px 0px ;
@@ -619,6 +641,7 @@ ul.tabs li.current{
   font-family: 'Poppins';
   border-radius: 30px;
   border: none;
+  cursor: pointer;
 }
 
 /* #------------footer-------------# */
@@ -632,7 +655,9 @@ footer{
 }
 
 footer > p{
-  margin: 5px 0 0 30px;
-  color: #707070;
+  margin: 5px 0 0 65px;
+  color: #707071;
+  /* font-size: 20px; */
+  font-family:-apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .feedback-back{}

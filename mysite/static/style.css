@@ -121,6 +121,7 @@
 .sidebar .nav-links li a .link_name{
   font-size: 18px;
   font-weight: 400;
+  font-family: "QuickSand";
   color: #707070;
   transition: all 0.4s ease;
   margin-left: 40px;
@@ -375,6 +376,9 @@ ul.tabs a:first-child{
   background-color: #fafafa;
   width: 85%;
 }
+.template-auto > p:first-child{
+  padding-left: 120px;
+}
 .template-auto > p{
   padding: 20px;
   background-color: #fafafa;
@@ -402,6 +406,7 @@ ul.tabs a:first-child{
   color: #707070;
   font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
+  line-height: 130%;
 }
 .vac{
   width: 120px;
@@ -428,10 +433,10 @@ ul.tabs a:first-child{
   text-align: center;
 }
 .output-wrap > input{
-  width: 219px;
+  width: 200px;
   background-color: #1A4FFF;
   color:white;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: bold;
   font-family: 'Poppins';
   border-radius: 30px;
@@ -533,13 +538,12 @@ ul.tabs a:first-child{
 }
 
 .intro-area > div> .right-vac{
-  width: 20%;
-  height: 100px;
+  width: 70%;
+  float:right;
 }
 
 .intro-area > div> .left-vac{
   width: 70%;
-  height: 100px;
 }
 
 .intro-area > div:first-child{
@@ -551,8 +555,11 @@ ul.tabs a:first-child{
   height: 100px;
 }
 .intro-area > hr{
-  width: 82%;
+  width: 105%;
   border: solid 1px #b7b7b7;
+}
+.intro-area{
+  margin-right: 5%;
 }
 .tutorial-area{
   font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -565,13 +572,17 @@ ul.tabs a:first-child{
 }
 .tutorial-area > p.hi{
   color: #1A4FFF;
-  font-size: 25px;
+  font-size: 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo Regular', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 50px;
 }
 .tutorial-area > p.hi > span{
   background-color: #1A4FFF;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
+}
+p.bye{
+  line-height: 150%;
 }
 p.bye > span{
   background-color: #1A4FFF;
@@ -592,9 +603,7 @@ p.bye > span{
   width: 150px;
   margin: 5px 0px 5px 0px;
 }
-.tutorials > div{
-  width: 45%;
-  height: 200px;
+.tutorials > div > img{
   margin-top: 20px;
   background-color: #e0e0e0;
 }
@@ -633,10 +642,10 @@ p.bye > span{
   margin: 50px 0px 50px 0px ;
 }
 .review-result > button{
-  width: 219px;
+  width: 200px;
   background-color: #1A4FFF;
   color:white;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: bold;
   font-family: 'Poppins';
   border-radius: 30px;

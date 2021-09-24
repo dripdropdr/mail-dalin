@@ -377,7 +377,7 @@ ul.tabs a:first-child{
   width: 85%;
 }
 .template-auto > p:first-child{
-  padding-left: 120px;
+  padding-left: 10%;
 }
 .template-auto > p{
   padding: 20px;
@@ -409,7 +409,7 @@ ul.tabs a:first-child{
   line-height: 130%;
 }
 .vac{
-  width: 120px;
+  width: 15%;
   height: 200px;
 }
 .template-preview{
@@ -418,6 +418,9 @@ ul.tabs a:first-child{
   height: auto;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+.template-preview > div{
+  padding-left: 10%;
 }
 .template-title{
   color: #1A4FFF;
@@ -468,7 +471,7 @@ ul.tabs a:first-child{
   font-weight: bold;
   color: #707070;
   margin-top: 5px;
-  width: 125px;
+  width: 130px;
 }
 
 
@@ -540,6 +543,7 @@ ul.tabs a:first-child{
 .intro-area > div> .right-vac{
   width: 70%;
   float:right;
+  vertical-align: bottom;
 }
 
 .intro-area > div> .left-vac{
